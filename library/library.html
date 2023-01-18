@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>National library of india</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">N.I.I</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="message"></div>
+
+    <div class="container my-3">
+      <hr />
+      <h1>National libary of india</h1>
+      <hr />
+      <form id="libraryform">
+        <div class="row mb-3">
+          <label for="bookname" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="bookname"
+              placeholder="Book Name"
+            />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="author" class="col-sm-2 col-form-label">Author</label>
+          <div class="col-sm-10">
+            <input type="text" class="author" id="author" />
+          </div>
+        </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Type</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="type"
+                id="programming"
+                value="programming"
+                checked
+              />
+              <label class="form-check-label" for="programming">
+                programming
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="type"
+                id="motivational"
+                value=" motivational"
+              />
+              <label class="form-check-label" for=" motivational">
+                Motivational
+              </label>
+            </div>
+            <div class="form-check-label">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="type"
+                id="educational"
+                value="educational"
+              />
+              <label class="form-check-label" for="educational">
+                Educational
+              </label>
+            </div>
+
+            <!-- <div class="form-check-label">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name=" type1"
+                  id=" Motivational"
+                  value=" Motivational"
+                  
+                />
+                <label class="form-check-label" for=" Motivational">
+                  Motivational
+                </label>
+              </div> 
+
+                 <div class="form-check-label">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="type1"
+                    id="History"
+                    value="History"
+                  
+                  />
+                  <label class="form-check-label" for="History">
+                    History
+                  </label> -->
+          </div>
+          Developed by Anup
+        </fieldset>
+        <div class="row mb-3"></div>
+        <button type="submit" class="btn btn-primary">ADD BOOKS</button>
+      </form>
+
+      <table class="table table-dark table-hover mb-4">
+        <thead>
+          <tr>
+            <th scope="col">Book Name</th>
+            <th scope="col">Author</th>
+            <th scope="col">Type</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <script src="indexes.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
